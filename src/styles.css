@@ -1,0 +1,68 @@
+h1 {
+  color: rgb(55, 55, 65);
+  text-align: center;
+}
+.container {
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+.container button {
+  color: rgb(3, 7, 71);
+  background-color: white;
+}
+.emojis {
+  font-size: 35px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  opacity: 70%;
+  font-family: sans-serif;
+}
+h3 {
+  text-align: center;
+  opacity: 70%;
+  font-family: sans-serif;
+}
+p {
+  text-align: left;
+  padding-left: 50px;
+  color: rgb(3, 7, 71);
+}
+.umbrella {
+  text-align: left;
+  padding-left: 50px;
+}
+.week {
+  text-align: center;
+}
+.wrapped {
+  border: 2px black solid;
+  display: inline-block;
+  position: relative;
+  right: -500px;
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 100px;
+}
+.emoji {
+  font-size: 70px;
+}
+ul {
+  list-style: none;
+}
+.temperature {
+  font-weight: 600px;
+  font-size: 60px;
+  line-height: 2;
+}
+.col-6 {
+  text-align: center;
+  padding-right: 50px;
+  line-height: 3;
+}
