@@ -29,116 +29,121 @@
       </head>
 
       <body>
-        <div class ="wrapped">
-        <div class="container">
-          <div class="weather-app">
-            <form class="search-form" id="search-form">
+        <div class="wrapped">
+          <div class="container">
+            <div class="weather-app">
+              <form class="search-form" id="search-form">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="search"
+                      placeholder="Type a city.."
+                      autofocus="on"
+                      autocomplete="off"
+                      id="city-input"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="form-control btn btn-primary shadow-sm w-100"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <button
+                      class="btn btn-success w-100"
+                      id="current-location-button"
+                    >
+                      Current
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <h1 id="city">
+                13°C / 56°F
+                <div class="emoji">🌧</div>
+              </h1>
+
+              <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+              </ul>
               <div class="row">
                 <div class="col-6">
-                  <input
-                    type="search"
-                    placeholder="Type a city.."
-                    autofocus="on"
-                    autocomplete="off"
-                    id="city-input"
-                    class="form-control shadow-sm"
-                  />
-                </div>
-                <div class="col-3">
-                  <input
-                    type="submit"
-                    value="Search"
-                    class="form-control btn btn-primary shadow-sm w-100"
-                  />
-                </div>
-                <div class="col-3">
-                  <button
-                    class="btn btn-success w-100"
-                    id="current-location-button"
-                  >
-                    Current
-                  </button>
-                </div>
-              </div>
-            </form>
-            <h1 id="city">   13°C / 56°F <div class= 
-              "emoji">🌧</div></h1>
-              
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
-            <div class="row">
-              <div class="col-6">
-                <div class="clearfix">
-                  <div class="float-left">
-                    <span class="temperature" id="temperature"></span
-                    ><span class="units">°C</span>
+                  <div class="clearfix">
+                    <img id = "icon"
+                    src="https://openweathermap.org/img/wn/10d@2x.png"
+                    alt="clear"
+                    class="float-left"
+
+                    />
+                    <div class="float-left">
+                      <span class="temperature" id="temperature"></span
+                      ><span class="units"
+                      ><a href= "#" id = "celsius-link">°C</a>  | <a href = "#" id = "fahrenheit-link">°f</a><span>
+                    </div>
                   </div>
                 </div>
+                <div class="col-6">
+                  <ul>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> km/h</li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
-              </div>
-         
-          </div>
-        </div>
-    
-        <div class="week">
-            <div class="row">
-              <div class="col-sm">
-               Mon
-               <br/>
-             <div class="emojis" > ☀️</div>
-               <br/>
-               16°
-              </div>
-              <div class="col-sm">
-               Tue
-               <br/>
-               <div class="emojis" > 🌦</div>
-               <br/>
-               13°
-              </div>
-              <div class="col-sm">
-              Wed
-              <br/>
-              <div class="emojis">🌩</div>
-              <br/>
-              12°
-              </div>
-              <div class="col-sm">
-              Thurs
-              <br/>
-              <div class="emojis">🌤</div>
-              <br/>
-              14°
+            </div>
+
+            <div class="week">
+              <div class="row">
+                <div class="col-sm">
+                  Mon
+                  <br />
+                  <div class="emojis">☀️</div>
+                  <br />
+                  16°
                 </div>
                 <div class="col-sm">
+                  Tue
+                  <br />
+                  <div class="emojis">
+                    🌦</div>
+                    <br />
+                    13°
+                  </div>
+                  <div class="col-sm">
+                    Wed
+                    <br />
+                    <div class="emojis">🌩</div>
+                    <br />
+                    12°
+                  </div>
+                  <div class="col-sm">
+                    Thurs
+                    <br />
+                    <div class="emojis">🌤</div>
+                    <br />
+                    14°
+                  </div>
+                  <div class="col-sm">
                     Fri
-                    <br/>
-                    <div class="emojis"> ☀️</div>
-                    <br/>
+                    <br />
+                    <div class="emojis">☀️</div>
+                    <br />
                     11°
-                    </div>
-                    
-
                   </div>
-                  </div>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="open-sourced">
-      <a href="https://github.com/mairhead1/shecodes-challenge">open source code by mairhead </a>
-    </div>
+        </div>
+        <div class="open-sourced">
+          <a href="https://github.com/mairhead1/shecodes-challenge"
+            >open source code by mairhead
+          </a>
+        </div>
         <script src="src/index.js"></script>
-
-
-       
-        
       </body>
     </html>
   </head>
